@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>To Do List</title>
+
+<meta charset="UTF-8">
+<meta name="author" content="Kayla Hughes">
+<meta name="description" content="To Do List Web App">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="css.css">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section>
+	<h1>Tasks</h1>
+
+	<div id="list-input">
+		<input type="text" placeholder="Add new task" id="list-input--field">
+		<button onclick="addItem()" id="list-input--submit">Add</button>
+	</div>
+
+	<ul id="list">
+		<li>water plants</li>
+		<li>buy milk</li>
+		<li>watch game</li>
+	</ul>
+</section>
+
+<footer>
+	<p>Made with <span id="heart">&#9829;</span> by <b><a href="https://aesteriadesigns.github.io" title="Aesteria Designs">Aesteria Designs</a></b></p>
+
+	<p><a id="modalbtn" onclick="showModal()">What is this?</a></p>
+
+	<div id="modal" class="modal">
+
+		<div class="modal-content">
+		<p>This is minimalistic to do list web app. Add a new task using the input field at the top, mark a task as complete by clicking on its name, and delete a task by clicking the small x located on the right of the task. This isn't functional as of yet, I will be implementing local storage in future commits.</p>
+
+		<button class="closebtn">Close Window</close>
+
+		</div>
+	</div>
+</footer>
+
+<script src="js.js"></script>
+
+</body>
+
+</html>
